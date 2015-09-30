@@ -23,3 +23,26 @@ module.exports = generators.Base.extend({
     console.log('method 2 just ran');
   }
 });
+
+//generators.Base.extend({
+//    init: function () {
+//      this.helperMethod = function () {
+//        console.log('won\'t be called automatically');
+//      };
+//    }
+//  });
+
+//module.exports = generators.Base.extend({
+//  prompting: function () {
+//    var done = this.async();
+//    this.prompt({
+//      type    : 'input',
+//      name    : 'test',
+//      message : 'generator-test',
+//      default : this.appname // Default to current folder name
+//    }, function (answers) {
+//      this.log(answers.name);
+//      done();
+//    }.bind(this));
+//  }
+//})
